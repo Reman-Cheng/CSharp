@@ -1,0 +1,52 @@
+…or create a new repository on the command line
+
+echo "# MyOriginCode" >> README.md
+cd 目录
+1.git init
+2.git add README.md
+3.git commit -m "first commit"
+4.git remote add origin https://github.com/Reman-Cheng/MyOriginCode.git
+5.git push -u origin master
+git push -u origin master/Lua
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/Reman-Cheng/MyOriginCode.git
+git push -u origin master
+
+…or import code from another repository
+
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+
+
+
+$ ssh-keygen -t rsa -C "your_email@youremail.com"
+会在~/下生成.ssh文件夹，进去，打开id_rsa.pub，复制里面的key。
+进入要上传的仓库，右键git bash，添加远程地址：
+$ git remote add origin git@github.com:yourName/yourRepo.git
+git clone username@host:/path/to/repository
+
+设置代理: export http_proxy="http://username:password@10.191.131.15:3128"
+设置代理: export https_proxy="http://username:password@10.191.131.15:3128"
+
+
+# 分支的创建和合并
+# git branch yourbranch 
+# git checkout yourbranch    切换到yourbranch
+
+# 开发yourbranch分支，然后开发之后与master分支合并
+
+# git checkout master
+# git merge yourbranch
+# git branch -d yourbranch    合并完后删除本地分支
+
+
+# 查看当前项目下远程
+# git remote
+# 增加新的分支链接，例如
+git remote add niuren giturl…
+# 获取牛人的远程更新
+git fetch niuren
+# 将牛人的远程更新合并到本地分支
+git merge niuren/master
