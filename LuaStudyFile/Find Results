@@ -1,0 +1,36 @@
+Searching 34 files for "math.randomseed"
+
+/Users/swqt/Desktop/obj-c/lua xuexidaima/lua/1.lua:
+  303  print(math.random(1,100))
+  304  -- 在使用math.random函数之前必须使用此函数设置随机数种子
+  305: math.randomseed(tonumber(tostring(os.time()):reverse():sub(1,7)))
+  306  for i=1,10 do
+  307  	t = math.random(1,10)
+  ...
+  320  	local tabtab = {1,2,3,4,5,6,7,8,9}
+  321  	local tabrandom = {5}
+  322: 	math.randomseed(tonumber(tostring(os.time()):reverse():sub(1,7)))
+  323      for i = 2,9 do      
+  324  	   -- t = math.random(1,9)	   
+
+/Users/swqt/Desktop/obj-c/lua xuexidaima/lua/JModuleandPackage.lua:
+  184  print(math.min(2.71, 100, -98, 23))--取得参数中最大值
+  185  print(math.modf(15.98))--把数分为整数和小数
+  186: -- math.randomseed(os.time())
+  187  -- print(math.random(1, 100) )
+  188  print(math.sqrt(16))
+
+/Users/swqt/Desktop/obj-c/lua xuexidaima/lua/lianxiti1.lua:
+ 1144  -- 设置随机数种子
+ 1145  
+ 1146: -- math.randomseed(os.time())
+ 1147  
+ 1148  -- 在使用math.random函数之前必须使用此函数设置随机数种子
+
+/Users/swqt/Desktop/obj-c/lua xuexidaima/lua/testlua4.lua:
+  268  
+  269  
+  270: math.randomseed(os.time())
+  271  print(math.random())
+
+5 matches across 4 files
