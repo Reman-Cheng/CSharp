@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>20190906Reman</title>
+	<!-- 优先级较高 src-->
+	<script language="javascript" type="text/javascript" src="filename.js">
+		// 失效
+		// document.write("hello world"+"</br>");
+		// document.write("hello world"+"</br>");
+		// function sayHello(){
+		// 	alert("hello");
+		// }
+	</script>
+</head>
+<body>
+<script type="text/javascript">
+	var age = 20;
+	if(age>18){
+		document.write("<b>Qualifies for driving</b></br>")
+	}
+	var grade='A';
+    document.write("Entering switch block<br />");
+    switch (grade)
+    {
+      case 'A': document.write("Good job<br />");
+    break;
+      case 'B': document.write("Pretty good<br />");
+    break;
+      case 'C': document.write("Passed<br />");
+    break;
+      case 'D': document.write("Not so good<br />");
+    break;
+      case 'F': document.write("Failed<br />");
+    break;
+      default:  document.write("Unknown grade<br />")
+    }
+    document.write("Exiting switch block");
+    var count = 0;
+    while(count < 10){
+    	document.write("Current count : "+count+" <br/>")
+    	count = count + 1;
+    }
+    for(count = 1;count<10;count++){
+    	document.write("For ciclre count: "+count+"</br>")
+    }
+    for(i in navigator){document.write("navigator count: "+i+"</br>")}
+ //break continue
+    document.write("Entering the loop!<br /> ");
+    outerloop:   // This is the label name
+    for (var i = 0; i< 5; i++)
+    {
+    document.write("Outerloop: " + i + "<br />");
+    innerloop:
+    for (var j = 0; j < 5; j++)
+    {
+    if (j >  3 ) break ; // Quit the innermost loop
+    if (i == 2) break innerloop; // Do the same thing
+    if (i == 4) break outerloop; // Quit the outer loop
+    document.write("Innerloop: " + j + "  <br />");
+       }
+    }
+    document.write("Exiting the loop!<br /> ");
+    //可以使用+运算符连接字符串和数字
+    if(document.images){
+		var images1 = new Image();
+		images1.src = "eg_bulboff.gif";
+		var images2 = new Image();
+		images2.src = "eg_bulbon.gif";
+	}
+
+	for (i=0; i<navigator.plugins.length; i++) {
+       document.write("<tr><td>");
+       document.write(navigator.plugins[i].name);
+       document.write("</td><td>");
+       document.write(navigator.plugins[i].filename);
+       document.write("</td><td>");
+       document.write(navigator.plugins[i].description);
+       document.write("</td></tr>");
+    }
+
+</script>
+<p>
+第一次握你的手指尖传来你的温柔</br>
+每一次深情眼光的背后</br>
+谁知道会有多少愁多少愁</br>
+叫我怎么能不难过</br>
+你劝我灭了心中的火</br>
+我还能怎么做怎么做都是错</br>
+如果要我把心对你解剖</br>
+只要改变这结果</br>
+我会说我愿意做我受够了寂寞</br>
+只是爱要怎么说出口</br>
+我的心里好难受</br>
+如果能将你拥有我会忍住不让眼泪流</br>
+第一次握你的手指尖传来你的温柔</br>
+每一次深情眼光的背后</br>
+谁知道会有多少愁多少愁</br>
+爱要怎么说出口我的心里好难受</br>
+如果能将你拥有我会忍住不让眼泪流</br>
+第一次握你的手指尖传来你的温柔</br>
+每一次深情眼光的背后</br>
+谁知道会有多少愁多少愁</br>
+叫我怎么能不难过</br>
+你劝我灭了心中的火</br>
+我还能怎么说怎么说都是错</br>
+你对我说离开就会解脱</br>
+试着自已去生活</br>
+试着找寻自我何必为爱蹉跎</br>
+</p>
+<p>
+还记得那场音乐会的烟火</br>
+还记得那个凉凉的深秋</br>
+还记得人潮把你推向了我</br>
+游乐园拥挤的正是时候</br>
+一个夜晚坚持不睡的等候</br>
+一起泡温泉奢侈的享受</br>
+又一次日记里愚蠢的困惑</br>
+因为你的微笑幻化成风</br>
+你大大的勇敢保护着我</br>
+我小小的关怀喋喋不休</br>
+感谢我们一起走了那么久</br>
+又再一次回到凉凉深秋</br>
+给你我的手像温柔野兽</br>
+把自由交给草原的辽阔</br>
+我们小手拉大手一起郊游</br>
+今天别想太多</br>
+你是我的梦像北方的风</br>
+吹着南方暖洋洋的哀愁</br>
+我们小手拉大手今天加油</br>
+向昨天挥挥手</br>
+给你我的手像温柔野兽</br>
+我们一直就这样向前走</br>
+我们小手拉大手一起郊游</br>
+今天别想太多</br>
+我啦啦啦啦像北方的风</br>
+吹着南方暖洋洋的哀愁</br>
+我们小手拉大手今天加油</br>
+向昨天挥挥手</br>
+我们小手拉大手</br>
+今天为我加油</br>
+舍不得挥挥手</br>
+</p>
+<!-- <div onmouseover="over()" onmouseout="out()">
+<p>This is inside the division</p>
+</div> -->
+<form name="myform" action="">
+Enter name: <input type="text" name="customer"/>
+<input type="button" value="Set Cookie" onclick="WriteCookie();"/>
+</form>
+<input type="button" onclick="documenttitle()" value="document title"/>
+<input type="button" onclick="sayHello()" value="onclick it"/>
+<input type="button" onclick="HitToSaySomething()" value="onclick it too"/>
+
+<form>
+    <img id="myImage" src="mage.jpg" />
+    <p>Click button below to move the image to right</p>
+    <input type="button" value="Click Me" onclick="moveRight();" />
+    <input type="button" value="Start" onclick="moveRightAuto();" />
+    <input type="button" value="Stop" onclick="stopMove();" />
+</form>
+<p>Move your mouse over the image to see the result</p>
+<a href="#" onMouseOver="document.myImage.src=image2.src;"
+            onMouseOut="document.myImage.src=image1.src;">
+<img name="myImage" src="eg_bulboff.gif" />
+</a>
+<p>Move your mouse over the image to see the result</p>
+</body>
+</html>
