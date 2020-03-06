@@ -1,0 +1,9 @@
+{
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.cs",
+    "shell":true,
+    "osx":
+        {
+            "cmd": ["rm -f ${file_path}/${file_base_name}.exe; /Library/Frameworks/Mono.framework/Versions/5.20.1/bin/mcs ${file}; /Library/Frameworks/Mono.framework/Versions/5.20.1/bin/mono ${file_path}/${file_base_name}.exe"],
+        }
+}
